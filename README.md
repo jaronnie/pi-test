@@ -102,6 +102,8 @@ github链接：https://github.com/gocloudcoder/pi-test
 > 我使用了go1.16的新特性将静态文件打包到二进制程序当中
 >
 > 所以下载完之后直接运行就可以了
+>
+> 下载链接：https://pciture.nj-jay.com/pi-test.exe
 
 如果不存在，可以按照我的方法选取更多位数进行测试。
 

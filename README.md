@@ -104,6 +104,8 @@ github链接：https://github.com/gocloudcoder/pi-test
 > 所以下载完之后直接运行就可以了
 >
 > 下载链接：https://picture.nj-jay.com/pi-test.exe
+>
+> pi的一亿位数文档链接:https://picture.nj-jay.com/pi.txt
 
 如果不存在，可以按照我的方法选取更多位数进行测试。
 

@@ -27,8 +27,8 @@
 
 ```go
 func FormatFile() {
-	f, _ := os.Open("pi1.txt")
-	fs, _ := os.Create("pi2.txt")
+	f, _ := os.Open("pi-download.txt")
+	fs, _ := os.Create("pi.txt")
 	var str string
 	defer f.Close()
 	defer fs.Close()
@@ -73,22 +73,35 @@ func ContainsSubstring(s string, date string) (bool, int) {
 
 ```go
 func main() {
-	bytes, _ := ioutil.ReadFile("D:\\BaiduNetdiskDownload\\pi.txt")
-	b, index := ContainsSubstring(string(bytes), "20000619")
+	//FormatFile()
+	//格式化网上下载的文件
+
+	var input string	
+	fmt.Println("请输入生日，(格式为20000619)")
+	_, _ = fmt.Scan(&input, "%s")
+	bytes, _ := f.ReadFile("pi.txt")
+	b, index := ContainsSubstring(string(bytes), input)
 	if b {
-		fmt.Println("20000619", "存在")
+		fmt.Println(input, "存在")
 		fmt.Println("位置", index)
 	} else {
 		fmt.Println("不存在")
 	}
+	time.Sleep(time.Second *15)
 }
 ```
 
-![image-20210228153749493](http://picture.nj-jay.com/image-20210228153749493.png)
+![image-20210228162043030](http://picture.nj-jay.com/image-20210228162043030.png)
 
 卧槽，我惊呆了，竟然真的存在。
 
 当然我只是测试了这一个数据，如果你想测试你的生日的话，可以在我的github主页上下载已经编译好的程序进行测试。
+
+github链接：https://github.com/gocloudcoder/pi-test
+
+> 我使用了go1.16的新特性将静态文件打包到二进制程序当中
+>
+> 所以下载完之后直接运行就可以了
 
 如果不存在，可以按照我的方法选取更多位数进行测试。
 
